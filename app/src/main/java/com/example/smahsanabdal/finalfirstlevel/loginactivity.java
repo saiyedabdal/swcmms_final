@@ -37,7 +37,12 @@ import static android.Manifest.permission.READ_CONTACTS;
 
 public class loginactivity extends AppCompatActivity {
 
-    public void activityLogin(View v){
+    public void activityForget(View v){
+        Intent i = new Intent(this,forgotpassword.class);
+        startActivity(i);
+    }
+
+    public void activitySignup(View v){
         Intent i = new Intent(this,signup.class);
         startActivity(i);
     }
