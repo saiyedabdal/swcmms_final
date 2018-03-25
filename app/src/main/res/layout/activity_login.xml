@@ -77,7 +77,8 @@
                 android:textColor="#303EA0"
                 android:background="#fff"
                 android:paddingTop="10dp"
-                android:paddingBottom="10dp"/>
+                android:paddingBottom="10dp"
+                android:onClick="activitySignup"/>
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
@@ -89,33 +90,40 @@
                 android:layout_marginBottom="20dp"
                 android:textAlignment="center"
                 />
-
-            <View
-                android:layout_width="160dp"
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3">
+           <View
+                android:layout_width="match_parent"
+               android:layout_weight="1"
                 android:layout_height="2dp"
                 android:layout_marginTop="20dp"
                 android:background="@color/hl"
                 android:visibility="visible">
             </View>
             <TextView
+                android:layout_weight="1"
                 android:id="@+id/textView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="OR"
                 android:textStyle="bold"
                 android:textColor="#fff"
-                android:layout_marginTop="-10dp"
+                android:layout_marginTop="10dp"
                 android:textAlignment="center"
                 android:layout_marginLeft="2dp"
                 />
-            <View
-                android:layout_width="160dp"
-                android:layout_height="2dp"
-                android:layout_marginTop="-10dp"
-                android:layout_marginLeft="195dp"
-                android:background="@color/hl"
-                android:visibility="visible">
-            </View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/hl"
+        android:visibility="visible">
+    </View>
+</LinearLayout>
 
             <Button
                 android:id="@+id/email_sign_in_button"

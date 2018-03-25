@@ -17,7 +17,14 @@
         <activity
             android:name=".loginactivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".forgotpassword"></activity>
+        <activity android:name=".forgotpassword" />
+        <activity android:name=".signup">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>

@@ -5,14 +5,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class forgotpassword extends AppCompatActivity {
+public class signup extends AppCompatActivity {
+
     public void activityLogin(View v){
         Intent i = new Intent(this,loginactivity.class);
         startActivity(i);
     }
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fp);
+        setContentView(R.layout.activity_signup);
     }
 }

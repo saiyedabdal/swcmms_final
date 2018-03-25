@@ -1,10 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.smahsanabdal.finalfirstlevel.forgotpassword"
-    android:background="#4bca66">
+    android:background="#fff"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="251dp"
+            android:src="@drawable/pakka_final_logo"
+            android:layout_marginBottom="-60dp"
+            android:layout_marginTop="0dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Forgot Password?"
+            android:textSize="25sp"
+            android:textColor="#777"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="We just need your registered Email Id to sent you password reset instructions."
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:textColor="#777"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Registered Email Id"
+            android:layout_margin="15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="RESET PASSWORD"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:layout_marginBottom="20dp"
+            android:background="#303EA0"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="BACK"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:textColor="#777"
+            android:onClick="activityLogin"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -3,6 +3,7 @@ package com.example.smahsanabdal.finalfirstlevel;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -36,6 +37,10 @@ import static android.Manifest.permission.READ_CONTACTS;
 
 public class loginactivity extends AppCompatActivity {
 
+    public void activityLogin(View v){
+        Intent i = new Intent(this,signup.class);
+        startActivity(i);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
