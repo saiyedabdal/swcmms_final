@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:nestedScrollingEnabled="true"
+    android:scrollIndicators="right"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    android:scrollbarFadeDuration="@android:integer/config_shortAnimTime"
+    android:scrollbars="vertical"
+    android:background="@drawable/signupbck"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/project_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name Of Project"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/employer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Employer"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/name_contractor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name Of Contractor"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/work_order_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Work Order NO."
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/agreement_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Agreement NO."
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/date_of_commencement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Date of Commencement"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/due_date_of_completion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Due Date Of Completion "
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/time_allowed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Time Allowed"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/probable_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Probable  amount of Contract"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/Sl_no_of_bill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Sl. NO of Bill"
+                android:inputType="textPersonName" />
+
+
+
+            <EditText
+                android:id="@+id/Amount_of_bill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Amount of Bill"
+                android:inputType="textPersonName" />
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rainy Season Included" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+

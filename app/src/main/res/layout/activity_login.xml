@@ -78,7 +78,8 @@
                 android:background="#fff"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:onClick="activitySignup"/>
+                android:onClick="mainscreen"
+                />
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"

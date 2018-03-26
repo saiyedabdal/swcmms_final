@@ -5,18 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class mainscreen extends AppCompatActivity {
+public class projectpanel extends AppCompatActivity {
 
-    public void ProjectPanel (View V)
+    public void ProjectCreation (View V)
     {
-        Intent i = new Intent(this,projectpanel.class);
+        Intent i = new Intent(this,projectcreation.class);
         startActivity(i);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mainscreen);
+        setContentView(R.layout.activity_projectpanel);
     }
-
 }
