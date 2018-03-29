@@ -101,10 +101,11 @@ public class loginactivity extends AppCompatActivity {
         signin.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mFireBaseAuth.getCurrentUser() == null)
+                if (mFireBaseAuth.getCurrentUser() != null){
                     userId = mFireBaseAuth.getCurrentUser().getUid();
-
-
+                        Intent i = new Intent(this, mainscreen.class);
+                         startActivity(i);}
+                else
                 startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder().setAvailableProviders(providers).build(), RC_SIGN_IN);
             }
         });
@@ -116,8 +117,9 @@ public class loginactivity extends AppCompatActivity {
 
         userId = mFireBaseAuth.getCurrentUser().getUid();
         data.setuid(userId);
+        data.setType(null);
         myReference.push().child("Users").push().setValue(data);
-        AlertDialog adt=new AlertDialog.Builder(context).setTitle("Choose Dept").setView(getLayoutInflater().inflate(R.layout.list_dia,null)).setPositiveButton("Add", new DialogInterface.OnClickListener() {
+       /* AlertDialog adt=new AlertDialog.Builder(context).setTitle("Choose Dept").setView(getLayoutInflater().inflate(R.layout.list_dia,null)).setPositiveButton("Add", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 View v=getLayoutInflater().inflate(R.layout.list_dia,null);
@@ -140,7 +142,7 @@ public class loginactivity extends AppCompatActivity {
         }).create();
 
         adt.show();
-        /*myReference.child("Users").child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
+        myReference.child("Users").child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()) {
